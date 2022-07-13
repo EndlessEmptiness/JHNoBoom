@@ -1,0 +1,15 @@
+name: JHNoBoom
+main: org.eu.jhmc.dev.noboom.plugin
+version: 1.0
+api-version: 1.17
+commands:
+  noboom:
+    aliases: []
+    description: "NoBoom plugin Command"
+    usage: "Usage: /noboom <true | false>"
+  noboom_reload:
+    aliases:
+      - nb_reload
+      - noboom_reloadConfig
+    description: "Reload Noboom Config"
+    usage: "Usage: /noboom_reload"

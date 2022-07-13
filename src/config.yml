@@ -1,0 +1,10 @@
+jhmcConfig:
+  noboom:
+    enable_noboom: true       #开启防爆
+    allow_tnt: false          #允许TNT爆炸
+    allow_crepper: false      #允许爬行者爆炸
+    allow_tnt_minecart: false #允许TNT矿车爆炸
+#以下选项须自行添加
+  event:
+    disCmds: false            # true 或 false
+                              # 防爆开关/noboom指令是否仅后台执行 默认false
