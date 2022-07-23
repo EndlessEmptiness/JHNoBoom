@@ -11,6 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import static org.eu.jhmc.dev.noboom.plugin.mcplugin;
+
 public class cmdReload implements TabCompleter, CommandExecutor {
     @Override
     @ParametersAreNonnullByDefault
@@ -18,10 +20,13 @@ public class cmdReload implements TabCompleter, CommandExecutor {
         if(sender instanceof Player)
             if((!sender.isOp()) && (!sender.hasPermission("noboom.reload"))) {
                 sender.sendMessage("No Permission");
+                return true;
             }
 
         if(args.length != 0) return false;
+        mcplugin.reloadConfig();
         EventListener.init_cfg();
+        cmdNoboom.init_cfg();
         return true;
     }
 

@@ -22,6 +22,7 @@ public class plugin extends JavaPlugin {
     public void onEnable(){
         cmdNoboom.setTabCompleter();
         EventListener.init_cfg();
+        cmdNoboom.init_cfg();
 
 
         if (Bukkit.getPluginCommand("noboom") != null) {
